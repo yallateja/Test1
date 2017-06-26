@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAspect {
 	
-	@AfterThrowing("execution( void *Account(..))")
+	@After("execution( void *Account(..))")
 	public void beforeAddAccountAdvice(){
 		System.out.println(" Exception has been throwed");
 		

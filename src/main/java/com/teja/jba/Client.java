@@ -23,10 +23,10 @@ public class Client {
 		//ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(AppCOnfig.class);
 		AccountDAO accountdao=context.getBean("accountDAO", AccountDAO.class);
-		//BankDAO bakdao=context.getBean("bankDAO", BankDAO.class);
+		BankDAO bakdao=context.getBean("bankDAO", BankDAO.class);
 		
 		accountdao.addAccount();
-		//bakdao.addAccount("teja");
+		bakdao.addAccount("teja");
 		
 		context.close();
 		
