@@ -28,7 +28,7 @@ public class Client {
 		accountdao.addAccount();
 		bakdao.addAccount("teja");
 		
-		context.close();
+		//context.close();
 		
 		
 		
